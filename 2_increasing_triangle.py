@@ -5,10 +5,10 @@
 * * * * 
 * * * * *
 """
-n=5
+n = 5
 for i in range(n):
-    for j in range(i+1):
-        print("*",end=" ")
+    for j in range(i + 1):
+        print("*", end=" ")
     print()
 print("-----------------")
 
@@ -20,8 +20,8 @@ print("-----------------")
 1 2 3 4 5 
 """
 for i in range(n):
-    for j in range(i+1):
-        print(j+1,end=" ")
+    for j in range(i + 1):
+        print(j + 1, end=" ")
     print()
 print("-----------------")
 
@@ -33,8 +33,36 @@ print("-----------------")
 5 5 5 5 5
 """
 for i in range(n):
-    for j in range(i+1):
-        print(i+1,end=" ")
+    for j in range(i + 1):
+        print(i + 1, end=" ")
+    print()
+print("-----------------")
+
+"""
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+"""
+p = 1
+for i in range(n):
+    for j in range(i + 1):
+        print(p, end=" ")
+        p += 1
+    print()
+print("-----------------")
+
+"""
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
+"""
+for i in range(1, n + 1):
+    for j in range(i, i + i):
+        print(j % 2, end=" ")
     print()
 print("-----------------")
 
@@ -46,8 +74,8 @@ A B C D
 A B C D E 
 """
 for i in range(n):
-    for j in range(i+1):
-        print(chr(65+j),end=" ")
+    for j in range(i + 1):
+        print(chr(65 + j), end=" ")
     print()
 print("-----------------")
 
@@ -59,8 +87,8 @@ DDDD
 EEEEE
 """
 for i in range(n):
-    for j in range(i+1):
-        print(chr(65+i),end="")
+    for j in range(i + 1):
+        print(chr(65 + i), end="")
     print()
 print("-----------------")
 
@@ -72,8 +100,8 @@ BCDE
 ABCDE
 """
 for i in range(n):
-    for j in range(i,-1,-1):
-        print(chr(65+n-1-j),end="")
+    for j in range(i, -1, -1):
+        print(chr(65 + n - 1 - j), end="")
     print()
 print("-----------------")
 
@@ -85,6 +113,6 @@ EDCB
 EDCBA
 """
 for i in range(n):
-    for j in range(i+1):
-        print(chr(65+n-1-j),end="")
+    for j in range(i + 1):
+        print(chr(65 + n - 1 - j), end="")
     print()
